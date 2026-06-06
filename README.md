@@ -14,6 +14,45 @@ Melalui pemanfaatan teknologi Big Data dan Machine Learning, proyek ini bertujua
 
 ## 🏗️ Arsitektur Sistem
 
+## 📊 Dataset dan Sumber Data
+
+Proyek ini mengintegrasikan tiga sumber data utama untuk membangun model prediksi harga pangan:
+
+### 1. Data Harga Pangan
+- Sumber: Open Data Badan Pangan Nasional (Bapanas)
+- Cakupan: Harga komoditas pangan strategis per provinsi
+- Format: CSV
+- Peran: Target prediksi (label)
+
+### 2. Data Cuaca Historis
+- Sumber: Open-Meteo API
+- Variabel:
+  - Curah hujan (mm)
+  - Suhu rata-rata (°C)
+- Cakupan: 38 provinsi di Indonesia
+- Format: CSV
+- Peran: Fitur prediktor
+
+### 3. Data Kurs USD/IDR
+- Sumber: Yahoo Finance
+- Variabel:
+  - Nilai tukar USD terhadap IDR
+- Rentang waktu: 2021–2026
+- Format: CSV
+- Peran: Fitur makroekonomi
+
+### Hasil Integrasi Data
+Setelah proses ETL pada Silver Layer, seluruh sumber data digabungkan menjadi satu dataset terpadu yang berisi:
+
+- Provinsi
+- Komoditas
+- Tahun
+- Bulan
+- Harga
+- Curah hujan rata-rata bulanan
+- Suhu rata-rata bulanan
+- Kurs rata-rata bulanan
+
 Proyek ini menerapkan konsep **Medallion Architecture** yang terdiri atas tiga lapisan utama:
 
 ### 🥉 Bronze Layer
