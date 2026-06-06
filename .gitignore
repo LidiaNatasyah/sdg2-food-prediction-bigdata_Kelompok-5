@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+
+dataset_ml_ready.parquet/
+dataset_terpadu.parquet/
+
+model_random_forest/
+model_decision_tree/
+
+.venv/
+airflow-env/
+
+.DS_Store
