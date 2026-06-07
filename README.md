@@ -1,4 +1,4 @@
-# Prediksi Harga Komoditas Pangan Berbasis PySpark untuk Mendukung SDG 2 (Zero Hunger)
+# Prediksi Harga Komoditas Pangan Strategis Berbasis Machine Learning sebagai Upaya Deteksi Dini Ketahanan Pangan (SDG 2)
 
 Proyek ini merupakan implementasi pipeline data end-to-end menggunakan **Apache Spark (PySpark)** dan **Medallion Architecture** untuk memprediksi harga komoditas pangan strategis di Indonesia. Sistem mengintegrasikan data harga pangan, data cuaca, dan data kurs mata uang untuk menghasilkan model prediksi yang dapat mendukung pemantauan ketahanan pangan nasional, sejalan dengan tujuan **Sustainable Development Goal (SDG) 2: Zero Hunger**.
 
@@ -195,12 +195,14 @@ python train_model.py
 
 ## 👥 Tim Pengembang
 
-| Nama                    | NIM       | GitHub           |
-| ----------------------- | --------- | ---------------- |
-| Ahmad Rizqi             | 122450138 | @ikii-sd         |
-| Lidia Natasyah Marpaung | 123450015 | @LidiaNatasyah   |
-| Benget Sidabutar        | 123450047 | @BengetSidabutar |
-| Aisyah Musfirah         | 123450084 | @aisyahmusfirah  |
+| Nama                    | NIM       | GitHub |
+|-------------------------|-----------|--------|
+| Ahmad Rizqi             | 122450138 | [@ikii-sd](https://github.com/ikii-sd) |
+| Lidia Natasyah Marpaung | 123450015 | [@LidiaNatasyah](https://github.com/LidiaNatasyah) |
+| Benget Sidabutar        | 123450047 | [@BengetSidabutar](https://github.com/BengetSidabutar) |
+| Aisyah Musfirah         | 123450084 | [@aisyahmusfirah](https://github.com/aisyahmusfirah) |
+| Melinza Nabila          | 123450122 | [@MelinzaNabila122](https://github.com/MelinzaNabila122) |
+
 
 ---
 
