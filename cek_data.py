@@ -21,3 +21,26 @@ print(df.head())
 
 print("\n=== INFORMASI KOLOM DAN JUMLAH DATA ===")
 print(df.info())
+
+
+# Hapus baris 'from pyspark.sql import functions as F' jika ada
+
+komoditas_utama = ["Daging Sapi Murni", "Cabai Rawit Merah", "Beras Premium"]
+
+# CATATAN: Jika nama variabel penampung datamu bukan 'df', 
+# silakan ganti kata 'df' di bawah ini dengan nama variabelmu yang sebenarnya.
+df_filter = df[df["komoditas"].isin(komoditas_utama)]
+
+# Menghitung Nilai Terendah, Tertinggi, dan Rata-rata menggunakan Pandas
+df_statistik = df_filter.groupby("komoditas")["harga"].agg(
+    Nilai_Terendah="min",
+    Nilai_Tertinggi="max",
+    Rata_rata="mean"
+).reset_index()
+
+# Membulatkan nilai rata-rata agar rapi (tidak ada angka desimal panjang)
+df_statistik["Rata_rata"] = df_statistik["Rata_rata"].round(0)
+
+# Menampilkan hasil berupa tabel di terminal
+print("\n=== STATISTIK HARGA KOMODITAS ===")
+print(df_statistik.to_string(index=False))
