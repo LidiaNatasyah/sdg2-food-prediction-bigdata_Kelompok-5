@@ -3,7 +3,7 @@ __pycache__/
 
 dataset_ml_ready.parquet/
 dataset_terpadu.parquet/
-
+cek_data.py/
 model_random_forest/
 model_decision_tree/
 
